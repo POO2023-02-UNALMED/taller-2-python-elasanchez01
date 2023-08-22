@@ -32,6 +32,7 @@ class Auto():
         self.registro = registro
 
     def cantidadAsientos(self, asientos):
+        self.asientos = asientos
         numAsientos = 0
         for i in range(len(asientos)):
             i+= 1
@@ -41,6 +42,7 @@ class Auto():
                 return numAsientos
             
     def verificarIntegridad(self, registro):
+        self.registro = registro
         if registro == motor.registro:
             
             for i in range(len(asientos)):
